@@ -37,13 +37,13 @@ select {
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  height: 700px; /* Встановлюємо однакову висоту */
+  height: 750px; 
 }
 
 .movie-card img {
   width: 100%;
-  max-height: 500px; /* Фіксована висота блоку зображення */
-  object-fit: cover; /* Показує повністю фото, без обрізання */
+  max-height: 550px; 
+  object-fit: cover; 
   transition: transform 0.3s ease-in-out;
   flex-shrink: 0;
 }
@@ -76,20 +76,16 @@ select {
 
 @media (max-width: 1024px) {
   .movie-grid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .movie-grid {
-    grid-template-columns: 1fr; 
-  }
-
-  .movie-card {
-    height: auto; 
+    grid-template-columns: 1fr;
   }
 
   .movie-card img {
-    height: 220px; 
+    aspect-ratio: 7 / 10; 
   }
 }
