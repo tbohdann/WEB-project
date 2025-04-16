@@ -52,7 +52,7 @@ const movies = [
         title: "Аутсайдери / Форд проти Феррарі",
         genre: "Драма, Спорт",
         description: "Епічна драма, що розповідає про боротьбу між автомобільними брендами Ford і Ferrari на знаменитих перегонах 24 години Ле-Ману в 1960-х роках.",
-        dateTime: "2019-11-15 20:00",
+        dateTime: "2025-11-15 20:00",
         poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVnqnY8kt0AX4a6qKyqTzPW5GYrBVUle2hTA&s"
       },      
       {
@@ -60,7 +60,7 @@ const movies = [
         title: "Погані хлопці: Все або нічого",
         description: "Продовження культової франшизи про двох детективів, які знову опиняються у вирі вибухових подій.",
         genre: "Бойовик, Комедія",
-        dateTime: "2024-06-14 18:00",
+        dateTime: "2025-06-14 18:00",
         poster: "https://uaserials.pro/posters/8891.webp"
       },
       {
@@ -68,7 +68,7 @@ const movies = [
         title: "Месники: Фінал",
         description: "Месники зібралися, щоб протистояти Таносу та врятувати всесвіт від знищення, у фінальному етапі епічної боротьби за долю світу.",
         genre: "Бойовик, Фантастика",
-        dateTime: "2019-04-26 22:00",
+        dateTime: "2025-04-26 22:00",
         poster: "https://api.vkino.com.ua/posters/eb/eb043955be009d49a15a82280e0014a4c21fdb89.jpg"
       },
       {
@@ -76,7 +76,7 @@ const movies = [
         title: "Початок",
         description: "Група професіоналів, які можуть проникати в мрії, здійснює найскладнішу місію в своєму житті.",
         genre: "Наукова фантастика",
-        dateTime: "2010-07-16 19:30",
+        dateTime: "2025-07-16 19:30",
         poster: "https://s4.vcdn.biz/static/f/1396166071/image.jpg/pt/r375x0x4"
       },
       {
@@ -84,7 +84,7 @@ const movies = [
         title: "Зоряні війни: Пробудження сили",
         description: "Нове покоління героїв, яке повинно об'єднатися для боротьби з імперією.",
         genre: "Фантастика",
-        dateTime: "2015-12-18 20:30",
+        dateTime: "2025-12-18 20:30",
         poster: "https://staticeu.sweet.tv/images/cache6/posters/BCIXWEQCOVVSUAQIAI======/15761-zoryani-viyni-epizod-7-probudzhennya-sili.jpg"
       },
       {
@@ -92,7 +92,7 @@ const movies = [
         title: "Доктор Стрендж",
         description: "Колишній хірург, який втратив свої здібності, шукає спосіб зцілення і потрапляє у світ магії.",
         genre: "Фантастика, Бойовик",
-        dateTime: "2016-11-04 18:30",
+        dateTime: "2025-11-04 18:30",
         poster: "https://play-lh.googleusercontent.com/YJdW9ohq-kpKkwhqlNy2U976xJGAY7RghZG6ETRPWtU0YJB7TZNUFesOo6mBgvodwlem=w240-h480-rw"
       },
       {
@@ -100,7 +100,7 @@ const movies = [
         title: "Ла-Ла Ленд",
         description: "Романтична драма про молоду пару, яка намагається знайти баланс між кар'єрою і стосунками.",
         genre: "Романтика, Драма",
-        dateTime: "2016-12-09 17:30",
+        dateTime: "2025-12-09 17:30",
         poster: "https://uaserial.com/images/serials/65/655638bc6d13b244305014.webp"
       },
       {
@@ -108,7 +108,7 @@ const movies = [
         title: "Ґран Туризмо",
         description: "Мотиваційна історія гравця в Gran Turismo, який став справжнім гонщиком, подолавши всі труднощі.",
         genre: "Спорт, Драма",
-        dateTime: "2023-08-09 22:30",
+        dateTime: "2025-08-09 22:30",
         poster: "https://uaserials.pro/posters/8072.webp"
       },
       {
@@ -116,7 +116,7 @@ const movies = [
         title: "Той, що жахає 3",
         description: "Клоун-ман`як повертається в ще більш моторошному продовженні. Вижити — не означає виграти.",
         genre: "Жахи",
-        dateTime: "2024-10-31 21:00",
+        dateTime: "2025-10-31 21:00",
         poster: "https://uaserial.com/images/serials/67/671df8827e264277402567.webp"
       },
       {
@@ -124,7 +124,7 @@ const movies = [
         title: "Ігри розуму",
         description: "Справжня історія математика Джона Неша, який бореться з психічними проблемами, але досягає великих наукових досягнень.",
         genre: "Драма",
-        dateTime: "2001-12-21 20:00",
+        dateTime: "2025-12-21 20:00",
         poster: "https://uaserials.pro/posters/2060.webp"
       },
       {
@@ -132,7 +132,7 @@ const movies = [
         title: "Веном: Останній танець",
         description: "Едді Брок і Веном стикаються з найбільшою загрозою у фінальній битві, яка може змінити їхнє життя назавжди.",
         genre: "Фантастика, Бойовик",
-        dateTime: "2024-10-25 19:30",
+        dateTime: "2025-10-25 19:30",
         poster: "https://uakino.me/uploads/posts/2024-10/5d34c9238f_44.jpg"
       },
     {
@@ -140,7 +140,7 @@ const movies = [
         title: "Вартові Галактики 3",
         description: "Група незвичайних героїв знову об'єднується, щоб захистити всесвіт від нових загроз.",
         genre: "Фантастика",
-        dateTime: "2023-05-05 20:00",
+        dateTime: "2025-05-05 20:00",
         poster: "https://content1.rozetka.com.ua/goods/images/big/314945630.jpg"
       },
       {
@@ -148,7 +148,7 @@ const movies = [
         title: "Трансформери: Повстання звірів",
         description: "Боротьба між автоботами і десептиконами продовжується, тепер з новими союзниками.",
         genre: "Бойовик",
-        dateTime: "2023-06-09 21:00",
+        dateTime: "2025-06-09 21:00",
         poster: "https://kinoukr.com/uploads/mini/short/f/f5bcde63c53d387ed5cc1a8ae3688b.jpg"
       },
       {
@@ -156,9 +156,17 @@ const movies = [
         title: "Дюна",
         description: "Епічна історія про боротьбу за виживання на пустельній планеті Арракіс.",
         genre: "Пригоди",
-        dateTime: "2021-10-22 19:00",
+        dateTime: "2025-10-22 19:00",
         poster: "https://uaserial.com/images/serials/66/662c218bd4504886698257.webp"
-      },      
+      }, 
+      {
+        id: 21,
+        title: "Ваяна 2",
+        description: "У Ваяна 2 хоробра мандрівниця вирушає в нову океанську пригоду, щоб урятувати свій народ від давньої загрози.",
+        genre: "Пригоди",
+        dateTime: "2025-10-27 14:00",
+        poster: "https://cdn.planetakino.ua/488_moana-2_2024/Media/Covers/vertical/opt_992df66b-d08f-4c79-8633-483a3db38a6c.jpg"
+      }     
   ];
   
   export default movies;
