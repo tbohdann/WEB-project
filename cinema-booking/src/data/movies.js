@@ -93,7 +93,7 @@ const movies = [
         description: "Колишній хірург, який втратив свої здібності, шукає спосіб зцілення і потрапляє у світ магії.",
         genre: "Фантастика, Бойовик",
         dateTime: "2016-11-04 18:30",
-        poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/bb966b79-5b10-485d-88d7-fb6aeb79b185/220x330"
+        poster: "https://play-lh.googleusercontent.com/YJdW9ohq-kpKkwhqlNy2U976xJGAY7RghZG6ETRPWtU0YJB7TZNUFesOo6mBgvodwlem=w240-h480-rw"
       },
       {
         id: 13,
