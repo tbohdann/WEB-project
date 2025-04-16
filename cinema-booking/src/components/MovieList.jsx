@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MovieCard from "./MovieCard";
-import "./MovieList.css"; // Імпортуємо стилі
+import "./MovieList.css"; 
 
 const MovieList = ({ movies }) => {
   const [selectedGenre, setSelectedGenre] = useState("Усі");

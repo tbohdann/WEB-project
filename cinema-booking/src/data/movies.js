@@ -141,7 +141,7 @@ const movies = [
         description: "Група незвичайних героїв знову об'єднується, щоб захистити всесвіт від нових загроз.",
         genre: "Фантастика",
         dateTime: "2023-05-05 20:00",
-        poster: "https://kino-teatr.ua/public/main/reviews/2023-05/review_5438.jpg"
+        poster: "https://content1.rozetka.com.ua/goods/images/big/314945630.jpg"
       },
       {
         id: 19,
@@ -149,7 +149,7 @@ const movies = [
         description: "Боротьба між автоботами і десептиконами продовжується, тепер з новими союзниками.",
         genre: "Бойовик",
         dateTime: "2023-06-09 21:00",
-        poster: "https://upst.fwdcdn.com/?MXdwMHFyODpodHRwOi8vYmlsc2hlLmNvbS91cGxvYWRzL2ltYWdlcy9iaWxzaGUvNTAzMV8yLmpwZw%3D%3D"
+        poster: "https://kinoukr.com/uploads/mini/short/f/f5bcde63c53d387ed5cc1a8ae3688b.jpg"
       },
       {
         id: 20,
