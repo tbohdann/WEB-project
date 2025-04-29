@@ -143,32 +143,12 @@ const Booking = () => {
   };
 
   return (
-    <>
-      <Header />
-      <div className="bg-gray-100 py-8 px-4 min-h-screen">
-        <ToastContainer
-          position="top-center"
-          autoClose={3000}
-          hideProgressBar={false}
-          pauseOnHover={false}
-          toastStyle={{
-            backgroundColor: '#4ade80',
-            color: '#1e3a8a',
-            fontSize: '18px',
-            borderRadius: '12px',
-            boxShadow: '0 4px 14px rgba(0, 0, 0, 0.2)'
-          }}
-          progressStyle={{
-            background: '#1e3a8a'
-          }}
-        />
+    
 
         <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/3 p-6 bg-gray-50">
               <h3 className="text-xl font-bold text-gray-800 mb-6">Деталі замовлення</h3>
-              
-                
                 
                 <div className="flex justify-between text-gray-700">
                   <span>Квитки ({selectedSeats.length})</span>
@@ -236,7 +216,6 @@ const Booking = () => {
                 </div>
               )}
 
-              {/* Форма для відгуків */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Залишити відгук</h3>
                 <textarea
@@ -271,9 +250,6 @@ const Booking = () => {
               </div>
             </div>
           </div>
-        </div>
-      
-    </>
   );
 };
 
