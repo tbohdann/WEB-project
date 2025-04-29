@@ -216,7 +216,6 @@ const Booking = () => {
                 </div>
               )}
 
-              {/* Форма для відгуків */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Залишити відгук</h3>
                 <textarea
