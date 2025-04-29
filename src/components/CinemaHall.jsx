@@ -95,7 +95,20 @@ const CinemaHall = ({ selectedSeats, onSeatSelect, takenSeats }) => {
           ))}
         </div>
 
-        
+        <div className="mt-6 flex justify-center gap-4 flex-wrap text-sm">
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 bg-green-500/10 border border-green-500 rounded-[3px]" />
+            <span>Вільні</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 bg-white/30 border border-pink-200 rounded-[3px]" />
+            <span>Зайняті</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 bg-blue-500/10 border border-blue-500 ring-2 ring-blue-300 shadow-md rounded-[3px]" />
+            <span>Обрані</span>
+          </div>
+        </div>
       </div>
     </div>
   );
