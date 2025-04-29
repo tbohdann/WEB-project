@@ -1,0 +1,156 @@
+[
+  {
+      "id": 1,
+      "poster": "https://upload.wikimedia.org/wikipedia/uk/2/29/Interstellar_film_poster2.jpg",
+      "title": "Інтерстеллар",
+      "description": "Мандрівка через простір і час для порятунку людства.",
+      "genre": "Наукова фантастика",
+      "seanceTimes": ["05.05 8:00"]
+  },
+  {
+      "id": 2,
+      "poster": "https://multiplex.ua/images/8c/11/8c112bff9fb3c408b956d674c6e27d84.jpeg",
+      "title": "Джокер",
+      "description": "Історія походження найбільшого лиходія Готема.",
+      "genre": "Драма",
+      "seanceTimes": ["05.05 21:30"]
+  },
+  {
+      "id": 3,
+      "poster": "https://images.prom.ua/4224605253_w640_h320_tyomnyj-rytsar-the.jpg",
+      "title": "Темний лицар",
+      "description": "Бетмен проти Джокера у боротьбі за Ґотем.",
+      "genre": "Бойовик",
+      "seanceTimes": ["06.05 22:00"]
+  },
+  {
+      "id":  4,
+      "poster": "https://uaserial.tv/images/serials/64/64ad468011806973336367.webp",
+      "title": "Барбі",
+      "description": "Рожевий світ та екзистенційна криза Барбі.",
+      "genre": "Комедія",
+      "seanceTimes": ["06.05 18:30"]
+  },
+  {
+      "id": 5,
+      "poster": "https://uaserials.pro/posters/8215.webp",
+      "title": "Опенгеймер",
+      "description": "Життя творця атомної бомби.",
+      "genre": "Історичний",
+      "seanceTimes": ["07.05 20:00"]
+  },
+  {
+      "id": 6,
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVnqnY8kt0AX4a6qKyqTzPW5GYrBVUle2hTA&s",
+      "title": "Аутсайдери / Форд проти Феррарі",
+      "description": "Епічна драма, що розповідає про боротьбу між автомобільними брендами Ford і Ferrari на знаменитих перегонах 24 години Ле-Ману в 1960-х роках.",
+      "genre": "Драма, Спорт",
+      "seanceTimes": ["08.05  13:00"]
+  },
+  {
+      "id": 7,
+      "poster": "https://uaserials.pro/posters/8891.webp",
+      "title": "Погані хлопці: Все або нічого",
+      "description": "Продовження культової франшизи про двох детективів, які знову опиняються у вирі вибухових подій.",
+      "genre": "Бойовик, Комедія",
+      "seanceTimes": ["08.05 20:00"]
+  },
+  {
+      "id": 8,
+      "poster": "https://api.vkino.com.ua/posters/eb/eb043955be009d49a15a82280e0014a4c21fdb89.jpg",
+      "title": "Месники: Фінал",
+      "description": "Месники зібралися, щоб протистояти Таносу та врятувати всесвіт від знищення, у фінальному етапі епічної боротьби за долю світу.",
+      "genre": "Бойовик, Фантастика",
+      "seanceTimes": ["09.05 19:00"]
+  },
+  {
+      "id": 9,
+      "poster": "https://s4.vcdn.biz/static/f/1396166071/image.jpg/pt/r375x0x4",
+      "title": "Початок",
+      "description": "Таємничий агент бореться, щоб запобігти Третій світовій війні, використовуючи технологію інверсії часу, кидаючи виклик природі часу та реальності у захоплюючому шпигунському трилері.",
+      "genre": "Наукова фантастика",
+      "seanceTimes": ["09.05 21:00"]
+  },
+  {
+      "id": 10,
+      "poster": "https://staticeu.sweet.tv/images/cache6/posters/BCIXWEQCOVVSUAQIAI======/15761-zoryani-viyni-epizod-7-probudzhennya-sili.jpg",
+      "title": "Зоряні війни: Пробудження сили",
+      "description": "Нове покоління героїв, яке повинно об'єднатися для боротьби з імперією.",
+      "genre": "Фантастика",
+      "seanceTimes": ["10.05 15:30"]
+  },
+    {
+      "id": 11,
+      "poster": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/bb966b79-5b10-485d-88d7-fb6aeb79b185/220x330",
+      "title": "Доктор Стрендж",
+      "description": "Колишній хірург, який втратив свої здібності, шукає спосіб зцілення і потрапляє у світ магії.",
+      "genre": "Фантастика, Бойовик",
+      "seanceTimes": ["10.05 18:30"]
+    },
+    {
+      "id": 12,
+      "poster": "https://uaserial.com/images/serials/65/655638bc6d13b244305014.webp",
+      "title": "Ла-Ла Ленд",
+      "description": "Романтична драма про молоду пару, яка намагається знайти баланс між кар'єрою і стосунками.",
+      "genre": "Романтика, Драма",
+      "seanceTimes": ["11.05 17:30"]
+    },
+    {
+      "id": 13,
+      "poster": "https://uaserials.pro/posters/8072.webp",
+      "title": "Ґран Туризмо",
+      "description": "Мотиваційна історія гравця в Gran Turismo, який став справжнім гонщиком, подолавши всі труднощі.",
+      "genre": "Спорт, Драма",
+      "seanceTimes": ["11.05 20:30"]
+    },
+    {
+      "id": 14,
+      "poster": "https://uaserial.com/images/serials/67/671df8827e264277402567.webp",
+      "title": "Той, що жахає 3",
+      "description": "Клоун-ман`як повертається в ще більш моторошному продовженні. Вижити — не означає виграти.",
+      "genre": "Жахи",
+      "seanceTimes": ["12.05 21:00"]
+    },
+    {
+      "id": 15,
+      "poster": "https://uaserials.pro/posters/2060.webp",
+      "title": "Ігри розуму",
+      "description": "Справжня історія математика Джона Неша, який бореться з психічними проблемами, але досягає великих наукових досягнень.",
+      "genre": "Драма",
+      "seanceTimes": ["13.05 18:00"]
+    },
+    {
+      "id": 16,
+      "poster": "https://uakino.me/uploads/posts/2024-10/5d34c9238f_44.jpg",
+      "title": "Веном: Останній танець",
+      "description": "Едді Брок і Веном стикаються з найбільшою загрозою у фінальній битві, яка може змінити їхнє життя назавжди.",
+      "genre": "Фантастика, Бойовик",
+      "seanceTimes": ["13.05 21:30"]
+    },
+    {
+      "id": 17,
+      "poster": "https://kino-teatr.ua/public/main/reviews/2023-05/review_5438.jpg",
+      "title": "Вартові Галактики 3",
+      "description": "Група незвичайних героїв знову об'єднується, щоб захистити всесвіт від нових загроз.",
+      "genre": "Фантастика",
+      "seanceTimes": ["14.05 19:00"]
+    },
+    {
+      "id": 18,
+      "poster": "https://upst.fwdcdn.com/?MXdwMHFyODpodHRwOi8vYmlsc2hlLmNvbS91cGxvYWRzL2ltYWdlcy9iaWxzaGUvNTAzMV8yLmpwZw%3D%3D",
+      "title": "Трансформери: Повстання звірів",
+      "description": "Боротьба між автоботами і десептиконами продовжується, тепер з новими союзниками.",
+      "genre": "Бойовик",
+      "seanceTimes": ["14.05 21:00"]
+    },
+    {
+      "id": 19,
+      "poster": "https://uaserial.com/images/serials/66/662c218bd4504886698257.webp",
+      "title": "Дюна",
+      "description": "Епічна історія про боротьбу за виживання на пустельній планеті Арракіс.",
+      "genre": "Пригоди",
+      "seanceTimes": ["15.05 19:00"]
+    }
+  ]
+  
+
