@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import CinemaHall from '../components/CinemaHall';
 import UserFormModal from '../components/UserFormModal';
 import SnackItem from '../components/SnackItem';
 import { getMovie, saveBooking, getTakenSeatsForSeance } from '../services/BookingService';
 import Header from '../components/Header';
+
 
 const Booking = () => {
   const [movie, setMovie] = useState(null);
@@ -90,8 +92,21 @@ const Booking = () => {
       timestamp: new Date().toISOString()
     };
 
-    
+    const success = await saveBooking(bookingData);
+    if (success) {
+      toast.success('Бронювання успішне!');
+      setTakenSeats((prev) => [...prev, ...selectedSeats]);
+      setShowUserForm(false);
+      setSelectedSeats([]);
+      setPopcornQuantity(0);
+      setCokeQuantity(0);
+    } else {
+      toast.error('Помилка бронювання');
+    }
   };
+
+
+
 
 
   const formatSeanceTime = (seance) => {
@@ -100,8 +115,25 @@ const Booking = () => {
   };
 
   return (
-    
-      
+    <>
+      <Header />
+      <div className="bg-gray-100 py-8 px-4 min-h-screen">
+        <ToastContainer
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          pauseOnHover={false}
+          toastStyle={{
+            backgroundColor: '#4ade80',
+            color: '#1e3a8a',
+            fontSize: '18px',
+            borderRadius: '12px',
+            boxShadow: '0 4px 14px rgba(0, 0, 0, 0.2)'
+          }}
+          progressStyle={{
+            background: '#1e3a8a'
+          }}
+        />
 
         <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row">
@@ -167,6 +199,8 @@ const Booking = () => {
             </div>
           </div>
         </div>
+      </div>
+    </>
   );
 };
 
