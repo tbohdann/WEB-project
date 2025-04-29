@@ -8,7 +8,6 @@ import SnackItem from '../components/SnackItem';
 import { getMovie, saveBooking, getTakenSeatsForSeance } from '../services/BookingService';
 import Header from '../components/Header';
 
-
 const Booking = () => {
   const [movie, setMovie] = useState(null);
   const [selectedSeats, setSelectedSeats] = useState([]);
@@ -64,7 +63,27 @@ const Booking = () => {
     setReviews(savedReviews);
   }, [movieId]);
 
-  
+  const validateForm = () => {
+    const newErrors = {};
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^(\+380\d{9})$/;
+
+    if (!userData.name.trim()) newErrors.name = "Ім'я обов'язкове";
+    if (!userData.phone.trim()) {
+      newErrors.phone = 'Телефон обов\'язковий';
+    } else if (!phoneRegex.test(userData.phone)) {
+      newErrors.phone = 'Невірний формат телефону';
+    }
+    if (!userData.email.trim()) {
+      newErrors.email = 'Email обов\'язковий';
+    } else if (!emailRegex.test(userData.email)) {
+      newErrors.email = 'Невірний формат email';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setUserData((prev) => ({ ...prev, [name]: value }));
@@ -105,9 +124,18 @@ const Booking = () => {
     }
   };
 
+  const handleReviewSubmit = () => {
+    if (!review.trim()) {
+      toast.error('Відгук не може бути порожнім');
+      return;
+    }
 
-
-
+    const newReviews = [...reviews, review];
+    setReviews(newReviews);
+    localStorage.setItem(`reviews-${movieId}`, JSON.stringify(newReviews));
+    setReview('');
+    toast.success('Відгук додано!');
+  };
 
   const formatSeanceTime = (seance) => {
     const [date, time] = seance.split(' ');
@@ -115,31 +143,25 @@ const Booking = () => {
   };
 
   return (
-    <>
-      <Header />
-      <div className="bg-gray-100 py-8 px-4 min-h-screen">
-        <ToastContainer
-          position="top-center"
-          autoClose={3000}
-          hideProgressBar={false}
-          pauseOnHover={false}
-          toastStyle={{
-            backgroundColor: '#4ade80',
-            color: '#1e3a8a',
-            fontSize: '18px',
-            borderRadius: '12px',
-            boxShadow: '0 4px 14px rgba(0, 0, 0, 0.2)'
-          }}
-          progressStyle={{
-            background: '#1e3a8a'
-          }}
-        />
+    
 
         <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/3 p-6 bg-gray-50">
               <h3 className="text-xl font-bold text-gray-800 mb-6">Деталі замовлення</h3>
-              
+                
+                <div className="flex justify-between text-gray-700">
+                  <span>Квитки ({selectedSeats.length})</span>
+                  <span>{selectedSeats.length * 200} UAH</span>
+                </div>
+
+                <div className="flex justify-between font-bold text-gray-800">
+                  <span>Всього</span>
+                  <span>
+                    {selectedSeats.length * 200 + popcornQuantity * 90 + cokeQuantity * 70} UAH
+                  </span>
+                </div>
+              </div>
               <button
                 onClick={() => setShowUserForm(true)}
                 disabled={selectedSeats.length === 0 || !selectedSeance}
@@ -194,13 +216,41 @@ const Booking = () => {
                 </div>
               )}
 
-              
-              
+              {/* Форма для відгуків */}
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Залишити відгук</h3>
+                <textarea
+                  value={review}
+                  onChange={(e) => setReview(e.target.value)}
+                  placeholder="Напишіть ваш відгук..."
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                />
+                <button
+                  onClick={handleReviewSubmit}
+                  className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+                >
+                  Надіслати
+                </button>
+              </div>
+
+              {/* Відображення відгуків */}
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Відгуки</h3>
+                {reviews.length > 0 ? (
+                  reviews.map((rev, index) => (
+                    <div
+                      key={index}
+                      className="p-3 border border-gray-300 rounded-lg mb-2 bg-gray-50"
+                    >
+                      {rev}
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-gray-600">Ще немає відгуків.</p>
+                )}
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </>
   );
 };
 
