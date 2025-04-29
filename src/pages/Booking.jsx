@@ -29,6 +29,11 @@ const Booking = () => {
   const { movieId } = useParams();
 
   useEffect(() => {
+    const savedReviews = JSON.parse(localStorage.getItem(`reviews-${movieId}`)) || [];
+    setReviews(savedReviews);
+  }, [movieId]);
+
+  useEffect(() => {
     const fetchData = async () => {
       const data = await getMovie(movieId);
       setMovie(data);
@@ -58,10 +63,7 @@ const Booking = () => {
     fetchTakenSeats();
   }, [movieId, selectedSeance]);
 
-  useEffect(() => {
-    const savedReviews = JSON.parse(localStorage.getItem(`reviews-${movieId}`)) || [];
-    setReviews(savedReviews);
-  }, [movieId]);
+  
 
   const validateForm = () => {
     const newErrors = {};
