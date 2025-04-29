@@ -22,8 +22,13 @@ const Header = () => {
             >
               <span className="group-hover:underline underline-offset-4">Головна</span>
             </a>
-            <a href="/new" className="text-white font-medium hover:text-rose-200 transition-colors duration-300">
-                Новинки
+            <a
+              href="https://mistokyia.ua/leisure/top-20-naibilsh-ochikuvanykh-filmiv-2025-roku"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white font-medium hover:text-rose-200 transition-colors duration-300"
+            >
+              Новинки
             </a>
 
           </nav>

@@ -92,6 +92,10 @@ app.get('/api/movies/:id', (req, res) => {
     }
 });
 
+app.get('/api/new', (req, res) => {
+    res.redirect('https://mistokyia.ua/leisure/top-20-naibilsh-ochikuvanykh-filmiv-2025-roku');
+});
+
 app.listen(PORT, () => {
     console.log(`Сервер запущено на http://localhost:${PORT}`);
     readData();
