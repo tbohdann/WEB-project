@@ -25,6 +25,13 @@ const MovieList = ({ movies }) => {
         return matchesTitle && matchesGenre;
     });
 
+    // Розрахунок фільмів для поточної сторінки
+    const indexOfLastMovie = currentPage * moviesPerPage;
+    const indexOfFirstMovie = indexOfLastMovie - moviesPerPage;
+    const currentMovies = filteredMovies.slice(indexOfFirstMovie, indexOfLastMovie);
+
+    // Розрахунок кількості сторінок
+    const totalPages = Math.ceil(filteredMovies.length / moviesPerPage);
 
     const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
@@ -71,7 +78,24 @@ const MovieList = ({ movies }) => {
                 </div>
             </div>
 
-           
+            {/* Пагінація */}
+            {totalPages > 1 && (
+                <div className="flex justify-center mt-8 space-x-2">
+                    {Array.from({ length: totalPages }, (_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => handlePageChange(index + 1)}
+                            className={`px-4 py-2 rounded-lg ${
+                                currentPage === index + 1
+                                    ? 'bg-pink-500 text-white'
+                                    : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                            } transition`}
+                        >
+                            {index + 1}
+                        </button>
+                    ))}
+                </div>
+            )}
 
             {filteredMovies.length === 0 && (
                 <div className="text-center mt-16">
