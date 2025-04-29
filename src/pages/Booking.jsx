@@ -29,11 +29,6 @@ const Booking = () => {
   const { movieId } = useParams();
 
   useEffect(() => {
-    const savedReviews = JSON.parse(localStorage.getItem(`reviews-${movieId}`)) || [];
-    setReviews(savedReviews);
-  }, [movieId]);
-
-  useEffect(() => {
     const fetchData = async () => {
       const data = await getMovie(movieId);
       setMovie(data);
@@ -63,7 +58,10 @@ const Booking = () => {
     fetchTakenSeats();
   }, [movieId, selectedSeance]);
 
-  
+  useEffect(() => {
+    const savedReviews = JSON.parse(localStorage.getItem(`reviews-${movieId}`)) || [];
+    setReviews(savedReviews);
+  }, [movieId]);
 
   const validateForm = () => {
     const newErrors = {};
@@ -145,13 +143,47 @@ const Booking = () => {
   };
 
   return (
-    
+    <>
+      <Header />
+      <div className="bg-gray-100 py-8 px-4 min-h-screen">
+        <ToastContainer
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          pauseOnHover={false}
+          toastStyle={{
+            backgroundColor: '#4ade80',
+            color: '#1e3a8a',
+            fontSize: '18px',
+            borderRadius: '12px',
+            boxShadow: '0 4px 14px rgba(0, 0, 0, 0.2)'
+          }}
+          progressStyle={{
+            background: '#1e3a8a'
+          }}
+        />
 
         <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/3 p-6 bg-gray-50">
               <h3 className="text-xl font-bold text-gray-800 mb-6">Деталі замовлення</h3>
-                
+              <div className="space-y-4">
+                <SnackItem
+                  icon="/popcorn.svg"
+                  name="Снеки"
+                  price={90}
+                  quantity={popcornQuantity}
+                  onIncrement={() => setPopcornQuantity((p) => Math.min(10, p + 1))}
+                  onDecrement={() => setPopcornQuantity((p) => Math.max(0, p - 1))}
+                />
+                <SnackItem
+                  icon="/cola.svg"
+                  name="Напої"
+                  price={70}
+                  quantity={cokeQuantity}
+                  onIncrement={() => setCokeQuantity((c) => Math.min(10, c + 1))}
+                  onDecrement={() => setCokeQuantity((c) => Math.max(0, c - 1))}
+                />
                 <div className="flex justify-between text-gray-700">
                   <span>Квитки ({selectedSeats.length})</span>
                   <span>{selectedSeats.length * 200} UAH</span>
@@ -218,6 +250,7 @@ const Booking = () => {
                 </div>
               )}
 
+              {/* Форма для відгуків */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Залишити відгук</h3>
                 <textarea
@@ -252,6 +285,9 @@ const Booking = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </>
   );
 };
 
