@@ -1,5 +1,4 @@
 [
- 
   {
     "movieId": "6",
     "seance": "27.02 21:00",
@@ -18,43 +17,5 @@
     "total": 140,
     "timestamp": "2025-04-26T21:22:24.277Z",
     "id": "1745702544283"
-  },
-  {
-    "movieId": "6",
-    "seance": "27.02 21:00",
-    "seats": [
-      "22"
-    ],
-    "userData": {
-      "name": "Peliak BOHDAN",
-      "email": "peliak.bohdan@gmail.com",
-      "phone": "+380995071510"
-    },
-    "snacks": {
-      "popcorn": 0,
-      "coke": 0
-    },
-    "total": 140,
-    "timestamp": "2025-04-26T21:37:33.194Z",
-    "id": "1745703453211"
-  },
-  {
-    "movieId": "8",
-    "seance": "29.02 19:00",
-    "seats": [
-      "14"
-    ],
-    "userData": {
-      "name": "пав",
-      "email": "btuseth6@gmail.com",
-      "phone": "+380999999999"
-    },
-    "snacks": {
-      "popcorn": 0,
-      "coke": 0
-    },
-    "total": 140,
-    "timestamp": "2025-04-29T11:43:44.390Z",
-    "id": "1745927024433"
   }
 ]

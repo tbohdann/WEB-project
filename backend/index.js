@@ -6,7 +6,7 @@ const MOVIES_FILE = path.join(__dirname, 'data', 'movies.json');
 const movies = require(MOVIES_FILE);
 
 const app = express();
-const PORT = 3022;
+const PORT = 3030;
 const DATA_FILE = path.join(__dirname, 'data', 'data.json');
 
 app.use(cors());

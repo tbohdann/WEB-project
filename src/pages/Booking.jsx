@@ -107,7 +107,7 @@ const Booking = () => {
         popcorn: popcornQuantity,
         coke: cokeQuantity
       },
-      total: selectedSeats.length * 120 + 20 + popcornQuantity * 85 + cokeQuantity * 65,
+      total: selectedSeats.length * 120  + popcornQuantity * 85 + cokeQuantity * 65,
       timestamp: new Date().toISOString()
     };
 
@@ -288,7 +288,7 @@ const Booking = () => {
         </div>
       </div>
     </>
-  );
+  ); 
 };
 
 export default Booking;

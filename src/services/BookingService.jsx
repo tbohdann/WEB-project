@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3022/api';
+const API_BASE_URL = 'http://localhost:3030/api';
 
 export const getMovies = async () => {
     try {
